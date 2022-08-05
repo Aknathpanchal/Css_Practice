@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolTip</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        width: 800px;
+        height: 20px auto;
+        padding: 100px;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        padding: 20px;
+      }
+
+      .tooltip .tooltiptop {
+        visibility: hidden;
+        width: 120px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .tooltip:hover .tooltiptop {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .tooltip .tooltiptop::after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+      }
+
+
+
+
+      .tooltip .tooltipbottom {
+        visibility: hidden;
+        width: 120px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .tooltip:hover .tooltipbottom {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .tooltip .tooltipbottom::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+      }
+
+
+
+      .tooltip .tooltipleft {
+        visibility: hidden;
+        width: 120px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 15px;
+        right: 105%;
+
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .tooltip:hover .tooltipleft {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .tooltip .tooltipleft::after {
+        content: " ";
+        position: absolute;
+        top: 9px;
+        left: 100%;
+        margin-left: 0px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent black;
+      }
+
+
+      .tooltip .tooltipright {
+        visibility: hidden;
+        width: 120px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 23%;
+        top: 20px;
+
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .tooltip:hover .tooltipright {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .tooltip .tooltipright::after {
+        content: " ";
+        position: absolute;
+        top: 30%;
+        right: 103%;
+        margin-right: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent black transparent transparent;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <button class="tooltip">
+        Left
+        <span class="tooltipleft">Left</span>
+      </button>
+
+      <button class="tooltip">
+        Top
+        <span class="tooltiptop">Top</span>
+      </button>
+
+      <button class="tooltip">
+        Bottom
+        <span class="tooltipbottom">Bottom</span>
+      </button>
+
+      <button class="tooltip">
+        Right
+        <span class="tooltipright">Right</span>
+      </button>
+
+    </div>
+  
+  </body>
+<!-- </html>
+https://delightful-llama-0956ea.netlify.app/ -->
