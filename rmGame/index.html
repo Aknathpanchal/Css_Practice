@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack-0</title>
+    <style>
+      #box2 {
+        height: 90%;
+        border-radius: 6px;
+        gap: 3px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(5, 1fr);
+        border: 1px solid rgb(3, 68, 68);
+        background-color: rgb(166, 201, 239);
+        /* padding-right: px; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      #box2 div {
+        height: 70px;
+        width: 70px;
+        border: 1px solid red;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="box"
+      style="
+        border: 1px solid black;
+        width: 100%;
+        height: 600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+      "
+    >
+      <div id="box2" style="border: 1px solid black; width: 60%"></div>
+      <div>
+        <h2>Timer:</h2>
+        <p id="timer"></p>
+        <br />
+
+        <h2>Score:</h2>
+        <p id="total"></p>
+        <br />
+
+        <h2>Tiles_Left:</h2>
+        <p id="tiles"></p>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function random() {
+    var r = Math.floor(Math.random() * 4) + 1;
+    return r;
+  }
+  // create an array
+  var myArr = [
+    "A",
+    "E",
+    "I",
+    "O",
+    "U",
+    "Q",
+    "Z",
+    "J",
+    "X",
+    "K",
+    "F",
+    "H",
+    "V",
+    "W",
+    "Y",
+    "B",
+    "C",
+    "M",
+    "P",
+    "D",
+  ];
+  let arr = [];
+  var obj = {};
+  var counter = 0;
+
+  myArr.map((elem) => {
+    obj[elem] = random();
+    counter += obj[elem];
+
+    var box = document.createElement("div");
+    box.addEventListener("click",function(){
+    if(obj[elem]>0){
+        obj[elem]--;
+        counter--
+    }
+        
+        
+})
+
+
+
+    var name = document.createElement("h1");
+    name.innerText = elem;
+    var value = document.createElement("p");
+    value.innerText = obj[elem];
+    let box2 = document.getElementById("box2");
+    box.append(name, value);
+    box2.append(box);
+  });
+
+  document.getElementById("tiles").innerHTML = counter;
+
+  var time = 99;
+  var timer = setInterval(function () {
+    if (time <= 0) {
+      clearInterval(timer);
+    }
+    var timer_couunt = document.getElementById("timer");
+    timer_couunt.innerText = time;
+    time--;
+  }, 1000);
+
+
+
+</script>
