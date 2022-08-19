@@ -4,48 +4,40 @@ import projImg1 from "../assets/image/apple.jpg";
 import projImg2 from "../assets/image/Front.jpg";
 import projImg3 from "../assets/image/urban.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import pro from "./pro.png"
+import profile from "../assets/img/profile.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Clone of Apple TV Website",
-      description: "The name of the project is Apple.tv. Apple TV+ is a streaming service featuring Apple Originals I created the inner pages of the website. I used HTML for building the structure of the website and for designing and colouring the website",
+      title: "Apple TV Website",
+      description:
+        "The name of the project is Apple.tv. Apple TV+ is a streaming service featuring Apple Originals I created the inner pages of the website. I used HTML for building the structure of the website and for designing and colouring the website",
       imgUrl: projImg1,
-      git:"https://github.com/Nameh-Dhiman/Apple-TV-Clone-Project.github.io",
-      live:"https://nameh-dhiman.github.io/Apple-TV-Clone-Project.github.io/",
+      git: "https://github.com/Nameh-Dhiman/Apple-TV-Clone-Project.github.io",
+      live: "https://nameh-dhiman.github.io/Apple-TV-Clone-Project.github.io/",
       techStack: "HTML | CSS | JS",
     },
     {
-      title: "Clone of Frontend-Master Website",
-      description: "This website is all about learning front-end courses. It provides a lot of courses courses through which one can become a master in front-end. We have made all the pages like landing page,signup page, login page, etc with different functionalities and simple and attractive UI.",
+      title: "Frontend-Master Website",
+      description:
+        "This website is all about learning front-end courses. It provides a lot of courses courses through which one can become a master in front-end. We have made all the pages like landing page,signup page, login page, etc with different functionalities and simple and attractive UI.",
       imgUrl: projImg2,
-      git:"https://github.com/muskan2507/Frontend-Master",
-      live:"https://zingy-cactus-84c80d.netlify.app/",
+      git: "https://github.com/muskan2507/Frontend-Master",
+      live: "https://zingy-cactus-84c80d.netlify.app/",
       techStack: "HTML | CSS | JS",
     },
     {
-      title: "Clone of Urban Company",
-      description: "Urban Company is an Indian gig marketplace that offers home installation, maintenance and repair services, and home beauty and wellness services",
+      title: "Urban Company",
+      description:
+        "Urban Company is an Indian gig marketplace that offers home installation, maintenance and repair services, and home beauty and wellness services",
       imgUrl: projImg3,
-      git:"https://github.com/HemanthKumar-CN/melted-lace-627",
-      live:"https://urban-clap-clone.netlify.app/",
+      git: "https://github.com/HemanthKumar-CN/melted-lace-627",
+      live: "https://urban-clap-clone.netlify.app/",
       techStack: "HTML | CSS | JS | REACT | REDUX | FIREBASE",
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    //   techStack: "HTML | CSS | JS",
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    //   techStack: "HTML | CSS | JS",
-    // },
+   
   ];
 
   return (
@@ -91,34 +83,43 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second" style={{display:"flex"}}>
-                        <div >
+                      <Tab.Pane eventKey="second" style={{ display: "flex" }}>
+                        <div>
                           {" "}
                           <img
                             style={{
                               width: "300px",
                               height: "300px",
                               borderRadius: "50%",
-                              border:"7px solid skyblue"
+                              border: "1px solid skyblue",
                             }}
-                            src={pro}
+                            src={profile}
                           ></img>
                         </div>
-                        <div style={{padding:"auto",margin:"0 0 0 100px"}}>
+                        <div style={{ padding: "auto", margin: "0 0 0 100px" }}>
                           {" "}
                           <p>Hi, My Name is</p>
-                          <h1 style={{textAlign: "center"}}>Shreenath Dnyaneshwar Panchal</h1>
-                          <p>I am passionate about building excellent software that improves the lives of those around me. I specialize in creating single page applications using technologies like React,Typescript,Mongo,Node. What would you do if you had a software expert available at your fingertips?</p>
+                          <h1 style={{ textAlign: "center" }}>
+                            Shreenath Dnyaneshwar Panchal
+                          </h1>
+                          <p>
+                            I am passionate about building excellent software
+                            that improves the lives of those around me. I
+                            specialize in creating single page applications
+                            using technologies like React,Redux,Typescript,Node.
+                            What would you do if you had a software expert
+                            available at your fingertips?
+                          </p>
                         </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <div style={{textAlign:"center", marginTop:"-20%"}}>
-                        <h1>E-mail:</h1>
-                        <h4>shree.d.panchal1999@gmail.com</h4>
-                        <br/>
-                        <br/>
-                        <h1>Call Me:</h1>
-                        <h4>8766992607(W.app)/9423247725</h4>
+                        <div style={{ textAlign: "center", marginTop: "-25%" }}>
+                          <h1>E-mail:</h1>
+                          <h4>shree.d.panchal1999@gmail.com</h4>
+                          <br />
+                          <br />
+                          <h1>Call Me:</h1>
+                          <h4>8766992607(W.app)/9423247725</h4>
                         </div>
                       </Tab.Pane>
                     </Tab.Content>

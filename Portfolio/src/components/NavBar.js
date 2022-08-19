@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from './logo2.png';
+import logo from '../assets/img/logo2.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/image/github.png';
-// import navIcon2 from './git.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+// import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -52,9 +51,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/panchal-shreenath-b83730234/"><img src={navIcon1} alt="" /></a>
-                <a href="https://github.com/Aknathpanchal"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/shree_0_8/"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/panchal-shreenath-b83730234/" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/Aknathpanchal" target="_blank"><img src={navIcon2} alt="" /></a>
+                {/* <a href="https://www.instagram.com/shree_0_8/" target="_blank"><img src={navIcon3} alt="" /></a> */}
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
