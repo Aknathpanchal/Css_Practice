@@ -1,15 +1,14 @@
-import meter1 from "../assets/image/css.png";
-import meter2 from "../assets/image/html.png";
-import meter3 from "../assets/image/javascript.png";
-import meter4 from "../assets/image/react.png";
-import meter5 from "../assets/image/firebase.png";
-import meter6 from "../assets/image/node.png";
-import meter7 from "../assets/image/github.png";
-import meter8 from "../assets/image/mongo.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+import meter1 from "../assets/image/techstack/css.png";
+import meter2 from "../assets/image/techstack/html.png";
+import meter3 from "../assets/image/techstack/javascript.png";
+import meter4 from "../assets/image/techstack/react.png";
+import meter5 from "../assets/image/techstack/firebase.png";
+import meter6 from "../assets/image/techstack/node.png";
+import meter7 from "../assets/image/techstack/github.png";
+import meter8 from "../assets/image/techstack/redux.png";
+import meter9 from "../assets/image/techstack/mui.png";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -59,6 +58,10 @@ export const Skills = () => {
                                 <h5>REACT</h5>
                             </div>
                             <div className="item">
+                                <img src={meter8} alt="Image" />
+                                <h5>REDUX</h5>
+                            </div>
+                            <div className="item">
                                 <img src={meter5} alt="Image" />
                                 <h5>FIREBASE</h5>
                             </div>
@@ -71,10 +74,10 @@ export const Skills = () => {
                                 <h5>GITHUB</h5>
                             </div>
                             <div className="item">
-                                <img src={meter8} alt="Image" />
-                                <h5>MONGO</h5>
+                                <img src={meter9} alt="Image" />
+                                <h5>MATERIAL UI</h5>
                             </div>
-                        </Carousel>
+                          </Carousel>
                     </div>
                 </div>
             </div>

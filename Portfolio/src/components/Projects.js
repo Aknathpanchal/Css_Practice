@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/image/apple.jpg";
-import projImg2 from "../assets/image/Front.jpg";
-import projImg3 from "../assets/image/urban.jpg";
+import projImg1 from "../assets/image/project/apple.jpg";
+import projImg2 from "../assets/image/project/Front.jpg";
+import projImg3 from "../assets/image/project/urban.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import profile from "../assets/img/profile.png";
 import "animate.css";

@@ -58,19 +58,3 @@ export const ProjectCard = ({
     </Col>
   );
 };
-
-{
-  /* <Col size={12} sm={6} md={4}>
-<div >
-  <img  src={imgUrl} />
-  <div  style={{textAlign:"center",marginTop:"20px",paddingBottom:"10px"}}>
-    <h4 >{title}</h4>
-    <span>{description}</span>
-    <p>{techStack}</p>
-    <div>
-       <buton></buton>
-    </div>
-  </div>
-</div>
-</Col> */
-}
