@@ -91,7 +91,8 @@ export const Projects = () => {
                               width: "300px",
                               height: "300px",
                               borderRadius: "50%",
-                              border: "1px solid skyblue",
+                              // border: "1px solid skyblue",
+                              background:"#414042"
                             }}
                             src={profile}
                           ></img>
