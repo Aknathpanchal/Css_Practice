@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/logo.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/image/techstack/github.png";
+import linkedin from "../assets/linkedin.svg";
+import github from "../assets/image/techstack/github.png";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import Whatsapp from "../assets/whatsapp4.png";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -40,16 +41,7 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link
-                href="https://drive.google.com/file/d/18IJfSQoZ9pD6QlY5I5ruxLp1GbDHaifM/view?usp=sharing"
-                target="_blank"
-                className={
-                  activeLink === "resume" ? "active navbar-link" : "navbar-link"
-                }
-              >
-                Rusume
-              </Nav.Link>
-              <Nav.Link
+            <Nav.Link
                 href="#home"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
@@ -57,6 +49,15 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink("home")}
               >
                 Home
+              </Nav.Link>
+              <Nav.Link
+                href="https://drive.google.com/file/d/1O6108O251gPH9vuaMjHg6jLIXjAs16Z1/view?usp=sharing"
+                target="_blank"
+                className={
+                  activeLink === "resume" ? "active navbar-link" : "navbar-link"
+                }
+              >
+                Resume
               </Nav.Link>
               <Nav.Link
                 href="#skills"
@@ -68,11 +69,20 @@ export const NavBar = () => {
                 Skills
               </Nav.Link>
               <Nav.Link
-                href="#about"
+                href="#project"
                 className={
-                  activeLink === "about" ? "active navbar-link" : "navbar-link"
+                  activeLink === "project" ? "active navbar-link" : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("projects")}
+              >
+                Project
+              </Nav.Link>
+              <Nav.Link
+                href="#profile"
+                className={
+                  activeLink === "profile" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("profile")}
               >
                 About
               </Nav.Link>
@@ -83,10 +93,13 @@ export const NavBar = () => {
                   href="https://www.linkedin.com/in/panchal-shreenath-b83730234/"
                   target="_blank"
                 >
-                  <img src={navIcon1} alt="" />
+                  <img src={linkedin} alt="" />
                 </a>
                 <a href="https://github.com/Aknathpanchal" target="_blank">
-                  <img src={navIcon2} alt="" />
+                  <img src={github} alt="" style={{width:"60%"}}/>
+                </a>
+                <a href="https://wa.me/918766992607" target="_blank"style={{color:""}} >
+                  <img src={Whatsapp} alt="" style={{width:"70%"}}/>
                 </a>
               </div>
               <HashLink to="#connect">

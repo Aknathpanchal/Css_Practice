@@ -4,7 +4,6 @@ import projImg1 from "../assets/image/project/apple.jpg";
 import projImg2 from "../assets/image/project/Front.jpg";
 import projImg3 from "../assets/image/project/urban.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import profile from "../assets/img/profile.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -15,7 +14,7 @@ export const Projects = () => {
       description:
         "The name of the project is Apple.tv. Apple TV+ is a streaming service featuring Apple Originals I created the inner pages of the website. I used HTML for building the structure of the website and for designing and colouring the website",
       imgUrl: projImg1,
-      git: "https://github.com/Nameh-Dhiman/Apple-TV-Clone-Project.github.io",
+      git: "https://github.com/Aknathpanchal/Apple-TV-Clone-Project.github.io",
       live: "https://nameh-dhiman.github.io/Apple-TV-Clone-Project.github.io/",
       techStack: "HTML | CSS | JS",
     },
@@ -24,7 +23,7 @@ export const Projects = () => {
       description:
         "This website is all about learning front-end courses. It provides a lot of courses courses through which one can become a master in front-end. We have made all the pages like landing page,signup page, login page, etc with different functionalities and simple and attractive UI.",
       imgUrl: projImg2,
-      git: "https://github.com/muskan2507/Frontend-Master",
+      git: "https://github.com/Aknathpanchal/Frontend-Master",
       live: "https://zingy-cactus-84c80d.netlify.app/",
       techStack: "HTML | CSS | JS",
     },
@@ -33,7 +32,7 @@ export const Projects = () => {
       description:
         "Urban Company is an Indian gig marketplace that offers home installation, maintenance and repair services, and home beauty and wellness services",
       imgUrl: projImg3,
-      git: "https://github.com/HemanthKumar-CN/melted-lace-627",
+      git: "https://github.com/Aknathpanchal/melted-lace-627-Urban-Company",
       live: "https://urban-clap-clone.netlify.app/",
       techStack: "HTML | CSS | JS | REACT | REDUX | FIREBASE",
     },
@@ -41,7 +40,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="about">
+    <section className="project" id="project">
       <Container>
         <Row>
           <Col size={12}>
@@ -52,7 +51,7 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>About</h2>
+                  <h2>Project</h2>
                   <p></p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -61,13 +60,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">My Work</Nav.Link>
+                        <Nav.Link eventKey="first">Collaborative</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">My Profile</Nav.Link>
+                        <Nav.Link eventKey="second">Individual</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Contact</Nav.Link>
+                        <Nav.Link eventKey="third">More</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -83,38 +82,11 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second" style={{ display: "flex" }}>
-                        <div>
-                          {" "}
-                          <img
-                            style={{
-                              width: "300px",
-                              height: "300px",
-                              borderRadius: "50%",
-                              // border: "1px solid skyblue",
-                              background:"#414042"
-                            }}
-                            src={profile}
-                          ></img>
-                        </div>
-                        <div style={{ padding: "auto", margin: "0 0 0 100px" }}>
-                          {" "}
-                          <p>Hi, My Name is</p>
-                          <h1 style={{ textAlign: "center" }}>
-                            Shreenath Dnyaneshwar Panchal
-                          </h1>
-                          <p>
-                            I am passionate about building excellent software
-                            that improves the lives of those around me. I
-                            specialize in creating single page applications
-                            using technologies like React,Redux,Typescript,Node.
-                            What would you do if you had a software expert
-                            available at your fingertips?
-                          </p>
-                        </div>
+                      <Tab.Pane eventKey="second">
+                       
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <div style={{ textAlign: "center", marginTop: "-25%" }}>
+                        <div style={{ textAlign: "center"}}>
                           <h1>E-mail:</h1>
                           <h4>shree.d.panchal1999@gmail.com</h4>
                           <br />

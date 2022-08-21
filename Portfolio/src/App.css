@@ -125,14 +125,17 @@ span.navbar-text {
   align-items: center;
 }
 .social-icon {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
   margin-left: 14px;
 }
 .social-icon a {
   width: 42px;
   height: 42px;
   background: rgba(217, 217, 217, 0.1);
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: flex;
+  flex-direction: column;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
