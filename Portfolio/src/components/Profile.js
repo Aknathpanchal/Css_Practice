@@ -33,7 +33,7 @@ export const Profile = () => {
               >
                 Shreenath Dnyaneshwar Panchal
               </h2>
-              <p>
+              <p style={{ textAlign: "center", color:"whitesmoke"}}>
                 I am passionate about building excellent software that improves
                 the lives of those around me. I specialize in creating single
                 page applications using technologies like
