@@ -656,4 +656,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 7%;
+  /* border: 5px solid #ccc; */
+  background-color: #181818;
 }

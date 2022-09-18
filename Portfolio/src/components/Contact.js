@@ -77,18 +77,18 @@ export const Contact = () => {
                     action="https://getform.io/f/bc13bfb3-ca81-403b-a347-b54cbade5fbf"
                   >
                     <Row>
-                      <Col size={12} sm={6} className="px-1">
+                      <Col size={12} sm={12} className="px-1">
                         <input
                           type="text"
                           value={formDetails.firstName}
-                          placeholder="First Name"
+                          placeholder="Full Name"
                           name="name"
                           onChange={(e) =>
                             onFormUpdate("firstName", e.target.value)
                           }
                         />
                       </Col>
-                      <Col size={12} sm={6} className="px-1">
+                      {/* <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
                           value={formDetails.lastName}
@@ -97,7 +97,7 @@ export const Contact = () => {
                             onFormUpdate("lastName", e.target.value)
                           }
                         />
-                      </Col>
+                      </Col> */}
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="email"
