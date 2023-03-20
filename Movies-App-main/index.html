@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body>
+    <!-- we are use oninput event becouse when we type something in input then its fired -->
+    <input oninput="debounce(main,1000)" type="text" placeholder="Search Movies Here" id="search">
+    <div id="result"></div>
+
+    <div id="show"></div>
+
+    <h1>Trending movies</h1>
+    <div id="trending"></div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
