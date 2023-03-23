@@ -1,0 +1,77 @@
+.nav{
+    background-color: rgb(13, 118, 209);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .creden{
+    display: grid;
+    /* justify-content: space-evenly; */
+    grid-template-columns: repeat(4,1fr);
+  }
+  a{
+    font-family: sans-serif;
+    color: white;
+    font-weight: 900px;
+  }
+  /* mens styling */
+  body{
+    background-color: bisque;
+  }
+  #container{
+   
+    height: auto;
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+    column-gap: 10px;
+  
+    
+  }
+  .columns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 30px;
+    column-gap: 50px;
+  
+  }
+  
+  .items{
+    width: 90%;
+    border: 1px solid black;
+    padding: 30px;
+    background-color: aqua;
+    border-radius: 25px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  
+  }
+  .content{
+    width: 80%;
+    /* background-color: aqua; */
+    margin: auto;
+  
+  }
+  img{
+    width: 100%;
+  }
+  
+  .name{
+    font-size:16px; font-weight: bold; font-family: sans-serif; font-style: italic;
+  }
+  .price2{
+  text-decoration: line-through;
+  font-size: 14px;
+  
+  }
+  .price1{
+  
+    font-family: sans-serif;
+  font-weight: bold;
+  }
+  button{
+    width: 150px;
+    background-color: wheat;
+    font-size: 20px;
+  }

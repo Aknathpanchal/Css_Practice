@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .priceDiv {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+
+    <link rel="stylesheet" href="mens.css">
+  </head>
+  <body>
+  <div class="nav">
+    <div class="product">
+
+        <h1>Bazar</h1>
+
+    </div>
+   
+<div class="creden">
+    <div class="signin">
+        <h2><a href="log\signup.html" target="_blank">Sign in</a></h2>
+    </div>
+    <div class="login">
+        <h2> <a href="log\login.html" target="_blank">  Log in</a>
+          </h2>
+    </div>
+    <div class="mens">
+       <a href="womens.html"> <h2>Womens</h2></a>
+    </div>
+    <div class="cart">
+        <!-- <h2 href="womens.html">Womens</h2> -->
+        <a href="cart.html"> <h2>My Cart</h2></a>
+     
+    </div>
+
+
+    
+
+ 
+  </div>
+
+</div>
+    
+        
+
+    
+</div>
+  <!-- Navbar -->
+
+    <div id="container">
+        <!-- <div class="columns">
+          <div class="items">
+            <div class="content">
+              <img src="https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg" alt="" srcset="">
+              <p class="name"> MEN'S REEBOK RUNNING ROADMAP SHOES</p>
+              
+              <p>1200</p> 
+              <p>1500</p>
+            </div>
+            <div><button>Add to cart</button></div>
+          </div>
+    
+    
+    
+    
+          <div class="items">
+            <div class="content">
+              <img src="https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg" alt="" srcset="">
+             
+             <p class="name"> MEN'S REEBOK RUNNING ROADMAP SHOES</p>
+              <p>1200</p> 
+              <p>1500</p>
+            </div>
+            <div><button>Add to cart</button></div>
+          </div>
+    
+    
+    
+          <div class="items">
+            <div class="content">
+              <img src="https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg" alt="" srcset="">
+              <p>1200</p> 
+              <p>1500</p>
+            </div>
+            <div><button>Add to cart</button></div>
+          </div>
+    
+    
+    
+    
+          <div class="items">
+            <div class="content">
+              <img src="https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg" alt="" srcset="">
+              <p>1200</p> 
+              <p>1500</p>
+            </div>
+            <div><button>Add to cart</button></div>
+          </div>
+        </div> -->
+    </div>
+
+
+
+    
+
+
+
+  </body>
+</html>
+<script src="../Data/mensData.js"></script>
+<script src="mens.js"></script>
+<!-- <script>
+  var mensData = JSON.parse(localStorage.getItem("mensData"));
+  console.log(mensData);
+  mensData.map(function (elem) {
+    var mainDiv = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.setAttribute("src", elem.image_url);
+
+    var name = document.createElement("p");
+    name.innerText = elem.name;
+
+    var innerDiv = document.createElement("div");
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+
+    var strikedoffprice = document.createElement("s");
+    strikedoffprice.innerText = elem.strikedoffprice;
+    //strikedoffprice.style.textDecoration = "line-through";
+
+    innerDiv.append(price, strikedoffprice);
+    innerDiv.setAttribute("class", "priceDiv");
+
+    var cart = document.createElement("button");
+    cart.innerText = "Add to cart";
+    cart.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    mainDiv.append(img, name, innerDiv, cart);
+
+    document.querySelector("#container").append(mainDiv);
+  });
+</script> -->
+
+

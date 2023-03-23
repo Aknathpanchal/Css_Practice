@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+      
+      <div class="container">
+        <h2>Login Form</h2>
+        <form action="#">
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="psw" placeholder="Enter password" name="pwd">
+          </div>
+         
+          <button type="button" onclick="saveData()" id="save_btn" class="btn btn-default">Submit</button>
+        </form>
+
+        <a href="signup.html"> signup here</a>
+      </div>
+      
+      </body>
+      <script>
+       
+function saveData()
+{
+let email,psw;
+email=document.getElementById("email").value;
+
+psw=document.getElementById("psw").value;
+
+let user_records=new Array();
+user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+console.log(user_records)
+user_records.map((user)=>{
+    if(email=="admin@gmail.com" && psw=="masai"){
+        alert("admin")
+        window.location.href="admin.html"
+
+    }else if(user.email==email && user.psw==psw){
+    alert("hgcdhvgfh")
+    window.location.href="user.html"
+}else{
+    alert("wrong credential")
+}
+
+})
+
+}
+          </script>
+      </html>
+      
