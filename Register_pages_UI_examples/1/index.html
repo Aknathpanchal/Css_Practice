@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .main {
+        width: 100%;
+        width: 100vh;
+      }
+
+      .reg-main-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #f9efe4;
+      }
+      .reg-main-container .bottom-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+      .logo {
+        margin-top: 1%;
+        margin-left: 1%;
+      }
+      .form-img-container {
+        width: 100%;
+        height: 65%;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        /* gap: 30px; */
+        margin: auto;
+        margin-top: 5%;
+      }
+
+      .box-2 {
+        width: 35%;
+        margin-top: 5vh;
+      }
+      .box-2 img {
+        width: 100%;
+      }
+      .lower-img {
+        width: 100%;
+        height: 30%;
+      }
+      .box-1 {
+        width: 50vh;
+        /* height: 570px; */
+        background-color: #f2f2f2;
+        position: relative;
+        border-radius: 5%;
+        background: #ffffff;
+        box-shadow: 3px 4px 64px rgba(0, 0, 0, 0.25);
+      }
+      .box-1 img {
+        width: 30vh;
+        border-radius: 0 0 20px 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .top-right-border {
+        position: absolute;
+        background-color: #db9696;
+        border-radius: 10% 25% 10% 100%;
+      }
+      .bottom-left-border {
+        position: absolute;
+        background-color: #db9696;
+        border-radius: 10% 100% 10% 25%;
+      }
+
+      .top-right-border {
+        top: 0;
+        right: 0;
+        width: 18%;
+        height: 13%;
+      }
+
+      .bottom-left-border {
+        bottom: 0;
+        left: 0;
+        width: 18%;
+        height: 15%;
+      }
+      .all-input {
+        margin-top: 10%;
+      }
+      .form-input {
+        width: 85%;
+        height: 30%;
+        margin: auto;
+        justify-content: center;
+        border: none;
+        padding-top: 10%;
+        margin-left: 5%;
+        outline: none;
+        border-bottom: 1px solid black;
+      }
+      .form-input::placeholder {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        color: #2f2f30;
+      }
+
+      .register-btn {
+        display: flex;
+        /* width: 179px; */
+        height: 5vh;
+        margin: auto;
+        justify-content: center;
+      }
+      .register-btn button {
+        width: 40%;
+        height: 5vh;
+        margin-top: 5%;
+        border-radius: 7px;
+
+        color: #ffffff;
+        text-align: center;
+        letter-spacing: 2.5px;
+        background: #ff8381;
+      }
+      .heeading1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        color: #000000;
+        opacity: 0.75;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        height: 20px;
+        margin-top: 70px;
+      }
+      .heeading1 a {
+        color: #ff8381;
+        text-decoration: none;
+      }
+      .heeading2 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+
+        color: #494040;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        height: 20px;
+        margin-top: 60px;
+      }
+
+      @media (min-width: 701px) and (max-width: 1000px) {
+        .reg-main-container {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: #f9efe4;
+        }
+        .form-img-container {
+          width: 90%;
+          height: fit-content;
+          /* position: absolute; */
+          display: flex;
+          justify-content: center;
+
+          gap: 30px;
+          margin: auto;
+          margin-top: 40px;
+        }
+        .logo {
+          margin-top: 10px;
+          width: 50%;
+        }
+        .box-2 {
+          /* display: none; */
+          width: 55%;
+          height: 470px;
+
+          margin: auto;
+        }
+        .box-2 img {
+          /* display: none; */
+          width: 100%;
+          height: 470px;
+          position: relative;
+          margin: auto;
+        }
+        .box-1 {
+          width: 370px;
+          height: 500px;
+          background-color: #f2f2f2;
+          /* position: relative; */
+          margin: auto;
+
+          border-radius: 20px;
+          background: #ffffff;
+
+          margin-top: -10px;
+          box-shadow: 3px 4px 64px rgba(0, 0, 0, 0.25);
+        }
+        .box-1 img {
+          width: 280px;
+          height: 160px;
+          border-radius: 0 0 20px 0;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        .form-input {
+          padding-top: 20px;
+        }
+        .reg-main-container .bottom-img {
+          width: 100%;
+          height: 150px;
+        }
+      }
+      @media (min-width: 500px) and (max-width: 700px) {
+        .reg-main-container {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: #f9efe4;
+        }
+        .form-img-container {
+          width: 100%;
+          height: fit-content;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+
+          gap: 30px;
+          margin: auto;
+          margin-top: 40px;
+        }
+        .logo {
+          margin-top: 10px;
+          width: 60%;
+        }
+        .box-2 {
+          display: none;
+          width: 65%;
+          height: 170px;
+
+          margin: auto;
+        }
+        .box-2 img {
+          display: none;
+          width: 100%;
+          height: 170px;
+          position: relative;
+          margin: auto;
+        }
+        .box-1 {
+          width: 70%;
+          height: 500px;
+          background-color: #f2f2f2;
+          /* position: relative; */
+          margin: auto;
+
+          border-radius: 20px;
+          background: #ffffff;
+
+          margin-top: -10px;
+          box-shadow: 3px 4px 64px rgba(0, 0, 0, 0.25);
+        }
+        .box-1 img {
+          width: 250px;
+          height: 130px;
+          border-radius: 0 0 20px 0;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        .form-input {
+          padding-top: 25px;
+        }
+        .reg-main-container .bottom-img {
+          margin: auto;
+          width: 90%;
+          height: 120px;
+        }
+      }
+      @media (min-width: 376px) and (max-width: 500px) {
+        .reg-main-container {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: #f9efe4;
+        }
+        .form-img-container {
+          width: 100%;
+          height: fit-content;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+
+          gap: 30px;
+          margin: auto;
+          margin-top: 40px;
+        }
+        .logo {
+          margin-top: 20px;
+          width: 60%;
+        }
+        .box-2 {
+          display: none;
+          width: 80%;
+          height: 250px;
+
+          margin: auto;
+        }
+        .box-2 img {
+          display: none;
+          width: 100%;
+          height: 250px;
+          position: relative;
+          margin: auto;
+        }
+        .box-1 {
+          width: 90%;
+          height: 550px;
+          background-color: #f2f2f2;
+          /* position: relative; */
+          margin: auto;
+
+          border-radius: 20px;
+          background: #ffffff;
+
+          margin-top: 10px;
+          box-shadow: 3px 4px 64px rgba(0, 0, 0, 0.25);
+        }
+        .box-1 img {
+          width: 250px;
+          height: 170px;
+          border-radius: 0 0 20px 0;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        .form-input {
+          padding-top: 30px;
+        }
+        .reg-main-container .bottom-img {
+          margin: auto;
+          width: 90%;
+          height: 120px;
+        }
+        .form-input::placeholder {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 12px;
+          color: #2f2f30;
+        }
+      }
+      @media (min-width: 250px) and (max-width: 375px) {
+        .reg-main-container {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: #f9efe4;
+        }
+        .form-img-container {
+          width: 100%;
+          height: fit-content;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+
+          gap: 30px;
+          margin: auto;
+          margin-top: 40px;
+        }
+        .logo {
+          margin-top: 20px;
+          width: 60%;
+        }
+        .box-2 {
+          display: none;
+          width: 75%;
+          height: 170px;
+
+          margin: auto;
+        }
+        .box-2 img {
+          display: none;
+          width: 100%;
+          height: 170px;
+          position: relative;
+          margin: auto;
+        }
+        .box-1 {
+          width: 90%;
+          height: 465px;
+          background-color: #f2f2f2;
+          /* position: relative; */
+          margin: auto;
+          border-radius: 20px;
+          background: #ffffff;
+
+          margin-top: -10px;
+          box-shadow: 3px 4px 64px rgba(0, 0, 0, 0.25);
+        }
+        .box-1 img {
+          width: 250px;
+          height: 150px;
+          border-radius: 0 0 20px 0;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        .form-input {
+          padding-top: 15px;
+        }
+        .reg-main-container .bottom-img {
+          margin: auto;
+          width: 90%;
+          height: 120px;
+        }
+        .form-input::placeholder {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 12px;
+          color: #2f2f30;
+        }
+        .register-btn button {
+          width: 159px;
+          height: 40px;
+          border-radius: 7px;
+          background: #ff8381;
+          margin-top: 30px;
+        }
+        .heeading1 {
+          font-size: 15px;
+        }
+        .heeading2 {
+          font-size: 7px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="reg-main-container">
+        <img
+          src="https://landsandhomes.com/front/images/logo4.svg"
+          alt=""
+          class="logo"
+        />
+        <img src="./assets/image1.png" alt="Your Image" class="bottom-img" />
+        <div class="form-img-container">
+          <div class="box-1">
+            <img src="./assets/image2.png" alt="Your Image" />
+
+            <div class="top-right-border"></div>
+            <div class="bottom-left-border"></div>
+            <div class="all-input">
+              <div class="form">
+                <form action="">
+                  <input
+                    type="text"
+                    placeholder="User Name"
+                    class="form-input"
+                  /><br />
+                  <input
+                    type="text"
+                    placeholder="Enter Email"
+                    class="form-input"
+                  /><br />
+                  <input
+                    type="text"
+                    placeholder="Enter Mobile number"
+                    class="form-input"
+                  /><br />
+                  <input
+                    type="text"
+                    placeholder="Password"
+                    class="form-input"
+                  />
+                  <div class="register-btn">
+                    <button>Register</button>
+                  </div>
+                </form>
+                <h1 class="heeading1">
+                  Do you have account already ?
+                  <a href="" class="login-text">login</a>
+                </h1>
+                <h3 class="heeading2">
+                  By signing up accepting terms & Conditions
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="box-2">
+            <img src="./assets/image3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
