@@ -1,0 +1,732 @@
+/* @import url(`https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap`); */
+
+/* Navbar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #f5f8ff; */
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container{
+    margin: 0 40px;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .container h1 {
+ color:#333
+  }
+
+  .container .tab {
+position: relative;
+background: #fff;
+padding: 0 20px 20px;
+box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+border-radius: 5px;
+overflow: hidden;
+  }
+
+  .container .tab input{
+    appearance: none;
+  }
+
+  .container .tab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .container .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color:rgba(0,0,0,0.1);
+    transition: transform 1s;
+  }
+
+  .container .tab:hover label::after{
+    color:#333
+  }
+
+  .container .tab input:checked ~ label::after{
+    transform: rotate(135deg);
+    color: #fff;
+  }
+
+  .container .tab label h2{
+   width: 40px;
+   height: 40px;
+   background: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   font-size: 1.25em;
+   border-radius: 5px;
+   margin-right: 10px;
+  }
+
+  .container .tab input:checked ~ label h2{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    color:rgba(255,255,255,0.2);
+    font-size: 8em;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+
+  .container .tab:nth-child(1) label h2{
+    background: linear-gradient(135deg,#70f570,#49c628);
+  }
+
+  .container .tab:nth-child(2) label h2{
+    background: linear-gradient(135deg,#3c8ce7,#00eaff);
+  }
+
+  .container .tab:nth-child(3) label h2{
+    background: linear-gradient(135deg,#ff96f9,#c32bac);
+  }
+
+  .container .tab label h3{
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  z-index: 10;
+   }
+
+   .container .tab .content{
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+   }
+
+   .container .tab input:checked ~ .content{
+    max-height: 100vh;
+   }
+
+   .container .tab .content p{
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+   }
+
+
+
+
+
+
+
+
+
+  
+  .welcomePageMainContainer {
+    width: 100%;
+    /* display: flex; */
+/* flex-direction: column; */
+  }
+  
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 8px #f0f1f2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 70px;
+  }
+  
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    border-bottom: 3px solid rgb(224, 224, 224);
+  }
+  
+  .MasailogoContainer img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .NavItemsMenuContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .NavMenuIcon {
+    display: none;
+  }
+  
+  .navHorizontalMenu {
+    display: flex;
+  }
+  
+  .navHorizontalMenu a {
+    color: #1f2937;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .navHorizontalMenu div {
+    height: 60px;
+    padding: 20px 0;
+    margin-right: 30px;
+  }
+  
+  .navHorizontalMenu div::after {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+  }
+  
+  .navHorizontalMenu div:hover:after {
+    width: 100%;
+    background: #4e46dc;
+  }
+  
+  .drawerMenu a {
+    display: block;
+    padding: 16px;
+    font-size: 16px;
+    color: #1f2937;
+    text-decoration: none;
+  }
+  
+  .drawerMenu a:hover {
+    color: #4e46dc;
+    background-color: #f0f1f2;
+  }
+  
+  .drawerMenu a:hover {
+    border-radius: 15;
+    background: #e4efff;
+  }
+  
+  .navAvatarContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Home */
+  
+  .welcomeMainContainer {
+    /* display: flex; */
+    justify-content: center;
+  }
+  
+  .welcomeMainContainer > div {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .WelcomeHomeContainer {
+    text-align: center;
+    color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .WelcomeHomeContainer > h1 {
+    font-weight: 500;
+    font-size: 40px;
+  }
+  
+  .WelcomeHomeContainer > p {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  
+  .signuploginButtonDiv {
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+  }
+  
+  /* About */
+  .WelcomeAboutWrapper,
+  .WelcomeHomeWrapper,
+  .WelcomeCompanyWrapper,
+  .welcomeObjectiveWrapper,
+  .welcomeFAQWrapper {
+    padding-top: 70px;
+  }
+  
+  .WelcomeAboutContainer {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #e9e9e9;
+    padding: 70px;
+    color: #1f2937;
+  }
+  
+  .WelcomeObjectiveContainer,
+  .WelcomeFAQContainer {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    color: #1f2937;
+  }
+  
+  .AboutLeftContainer,
+  .FAQLeftContainer {
+    width: 60%;
+  }
+  
+  .FAQLeftContainer {
+    padding: 20px;
+  }
+  
+  .AboutLeftContainer > h1,
+  .ObjectiveLeftContainer > h1 {
+    color: #1f2937;
+    font-size: 40px;
+  }
+  
+  .AboutLeftContainer > p,
+  .ObjectiveLeftContainer > p {
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .aboutImageDiv {
+    width: 40%;
+    position: relative;
+    left: 60px;
+    top: -60px;
+  }
+  
+  .ObjectiveImageDiv {
+    width: 40%;
+  }
+  
+  .FAQImageDiv {
+    width: 40%;
+    position: relative;
+    top: 60px;
+    left: 30px;
+  }
+  
+  .AboutContainerPTag {
+    margin-top: -14px;
+  }
+  
+  /* Recruiters */
+  .WelcomeCompanyContainer {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    /* animation: marquee 10s infinite linear;
+    behavior: alternate; */
+  }
+  
+  .WelcomeCompanyContainer > div {
+    width: 11%;
+  }
+  .welcomeFAQWrapper {
+    margin-bottom: 150px;
+  }
+  
+  /* MasaiFooter */
+
+  .Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    padding: 20px;
+    color: white;
+    box-sizing: content-box;
+    border: 1px solid black;
+    padding: 0px 20px;
+    gap: 5%;
+    height: 130px;
+  }
+  
+  .FooterLeftDiv p {
+    margin: 0;
+  }
+  
+  .FooterRightDiv h5 {
+    margin: 0;
+    color: white;
+  }
+  
+  .footerSocialMedia {
+    display: flex;
+  }
+  
+  .footerSocialMedia div {
+    margin-right: 10px;
+  }
+  
+  .footerSocialMedia a {
+    color: white;
+  }
+  
+  .footerSocialMedia i {
+    font-size: 24px;
+  }
+
+  .FooterRightDiv {
+    position: relative;
+    top: -15px;
+  }
+  
+  .footerSocialMedia {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .footerSocialMedia > div {
+    box-sizing: content-box;
+    padding: 7px;
+    background-color: #343f4e;
+    border-radius: 5px;
+  }
+  
+  .footerSocialMedia > div:hover {
+    background-color: #2a5186;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+
+  
+  @media (max-width: 500px) {
+    .welcomePageMainContainer {
+      width: 100%;
+    }
+  
+    .NavMenuIcon {
+      display: block;
+    }
+  
+    .navHorizontalMenu {
+      display: none;
+    }
+  
+    .navAvatarContainer {
+      display: none;
+    }
+  
+    .welcomeMainContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .welcomeMainContainer > div {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .WelcomeHomeContainer {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .WelcomeHomeContainer > h1 {
+      font-weight: 500;
+      font-size: 30px;
+    }
+    .WelcomeHomeContainer > p {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .signuploginButtonDiv {
+      display: flex;
+      flex-direction: column;
+      gap: 10%;
+      width: 70%;
+    }
+  
+    .WelcomeAboutContainer {
+      display: flex;
+      margin-top: 80px;
+      flex-direction: column-reverse;
+      height: auto;
+      width: 95%;
+      border-radius: 20px;
+      background-color: #e9e9e9;
+      color: #1f2937;
+      position: relative;
+      top: -60px;
+    }
+  
+    .WelcomeObjectiveContainer,
+    .WelcomeFAQContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      height: auto;
+      width: 100%;
+      border-radius: 20px;
+      padding: 10px;
+      padding-top: 20px;
+      color: #1f2937;
+    }
+  
+    .ObjectiveImageDiv {
+      width: 90%;
+      position: relative;
+      top: 20px;
+      left: 10px;
+    }
+  
+    .AboutLeftContainer {
+      width: 130%;
+      position: relative;
+      left: -40px;
+      top: -60px;
+    }
+  
+    .FAQLeftContainer {
+      width: 100%;
+      position: relative;
+      top: -60px;
+    }
+  
+    .FAQLeftContainer {
+      padding: 20px;
+    }
+  
+    .AboutLeftContainer > h1,
+    .ObjectiveLeftContainer > h1 {
+      color: #1f2937;
+      font-size: 40px;
+    }
+  
+    .AboutLeftContainer > p,
+    .ObjectiveLeftContainer > p {
+      line-height: 30px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  
+    .aboutImageDiv {
+      width: 130%;
+      position: relative;
+      left: -40px;
+      top: -60px;
+    }
+  
+    .aboutImageDiv > img {
+      width: 100%;
+    }
+  
+    /* recruiters */
+  
+    .WelcomeCompanyContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .WelcomeCompanyContainer > div {
+      width: 100%;
+    }
+  
+    /* faq */
+  
+    .FAQImageDiv {
+      width: 80%;
+      position: relative;
+      top: -60px;
+      left: 30px;
+    }
+
+    .container {
+        margin: 0 0;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+  
+    /* footer */
+  
+    .MasaiFooter {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0px 20px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1f2937;
+      color: white;
+      height: 130px;
+    }
+  
+    .FooterRightDiv {
+      position: relative;
+      top: 10px;
+    }
+  
+    .footerSocialMedia {
+      display: flex;
+      gap: 5px;
+    }
+    .footerSocialMedia > div {
+      box-sizing: content-box;
+      padding: 7px;
+      background-color: #343f4e;
+      border-radius: 5px;
+    }
+  }
+
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+
+    .WelcomeAboutContainer {
+        display: flex;
+        margin-top: 80px;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 95%;
+        border-radius: 20px;
+        background-color: #e9e9e9;
+        color: #1f2937;
+        position: relative;
+        top: -60px;
+      }
+
+    .WelcomeFAQContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+        padding-top: 20px;
+        color: #1f2937;
+      }
+
+    .FAQLeftContainer {
+        width: 100%;
+        position: relative;
+        top: -60px;
+      }
+    
+      .FAQLeftContainer {
+        padding: 20px;
+      }
+
+    .FAQImageDiv {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        top: -60px;
+        left: 30px;
+      }
+
+      .aboutImageDiv {
+        width: 100%;
+        position: relative;
+        left: -40px;
+        top: -60px;
+      }
+
+      .AboutLeftContainer{
+        width: 90%;
+        margin: auto;
+      }
+    
+      .aboutImageDiv > img {
+        width: 100%;
+      }
+
+      .container {
+        margin: 0 40px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
+
+
+
+
+
+
+/* CSS */
+.button-22 {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-22:active {
+  background-color: #006AE8;
+}
+
+.button-22:hover {
+  background-color: #1C84FF;
+}
+
+
+
+  
